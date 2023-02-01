@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-app="myApp">
+    <!-- Header -->
+    <!-- Nhung -->
+    <nav ng-include="'layout/header.html'"></nav>
+    <!-- Section -->
+    <!-- Thay doi noi dung theo duong dan -->
+    <div ng-view></div>
+    <!-- Footer -->
+    <nav ng-include="'layout/footer.html'"></nav>
+    <script src="../lib/angular.js"></script>
+    <!-- De su dung duoc SPA trong Angular JS: Thu vien : router  -->
+    <script src="../lib/angular-route.js"></script>
+    <script src="route.js"></script>
+  </body>
+</html>
